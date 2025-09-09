@@ -1,7 +1,7 @@
-Playwright Practice Project
+Playwright Practice Project: 
 A hands-on UI & API test automation practice project built using Microsoft Playwright. This project is designed to explore and practice modern end-to-end (E2E) automation techniques including multi-browser testing, assertions, locators, and reporting.
 
-✨ Features
+✨ Features: 
 •	✅ Cross-browser testing (Chromium, Firefox, WebKit)
 •	✅ Page Object Model (POM) structure
 •	✅ Rich test assertions with Playwright Test Runner
@@ -10,13 +10,13 @@ A hands-on UI & API test automation practice project built using Microsoft Playw
 •	✅ HTML reporting
 •	✅ Example scenarios: login, forms, alerts, popups, dynamic elements
 
-🛠️ Tech Stack
+🛠️ Tech Stack: 
 Language: TypeScript / JavaScript
 Framework: Playwright Test Runner
 Reporting: Built-in HTML reporter
 IDE: VS Code (recommended)
 
-🚀 Getting Started
+🚀 Getting Started: 
 Clone the repository
 git clone https://github.com/subhan17/PlaywrightExerciseProject.git
 cd playwright-practice
@@ -27,11 +27,11 @@ npx playwright install
 Run tests
 npx playwright test
 
-📊 Reporting
+📊 Reporting: 
 Generate and open HTML report:
 npx playwright show-report
 
-📂 Project Structure
+📂 Project Structure: 
 playwright-practice/
 │── tests/              # Test files (specs)
 │── pages/              # Page Object Model classes
@@ -40,7 +40,7 @@ playwright-practice/
 │── package.json
 │── README.md
 
-🧪 Example Test
+🧪 Example Test: 
 import { test, expect } from '@playwright/test';
 
 test('Login form validation', async ({ page }) => {
@@ -51,16 +51,16 @@ test('Login form validation', async ({ page }) => {
   await expect(page.locator('.welcome')).toHaveText('Welcome testuser');
 });
 
-🎯 Learning Goals
+🎯 Learning Goals: 
 •	• Understand Playwright fundamentals
 •	• Practice handling locators, assertions, and waits
 •	• Explore multiple browsers and devices
 •	• Implement Page Object Model (POM) for clean tests
 •	• Gain confidence in UI & API test automation with Playwright
 
-🙌 Contributing
+🙌 Contributing: 
 This is a practice project — contributions, suggestions, and improvements are always welcome!
 
-📖 References
+📖 References: 
 •	Playwright Official Docs - https://playwright.dev/docs/intro
 •	Playwright GitHub Repo - https://github.com/microsoft/playwright
