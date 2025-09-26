@@ -8,7 +8,7 @@ test('Launch Browser', async function({browser}){
     expect(await page.title()).toBe("Codeply simple HTML/CSS/JS preview")
 });
 
-test('Launch Browser1', async ({browser, page})=>{
+test('@smoke Launch Browser1', async ({browser, page})=>{
     await page.goto('https://playwright.dev/docs/intro')
     console.log(await page.title())
     expect(await page.title()).toBe("Playwright");    
@@ -27,7 +27,7 @@ test('Invalid Login Validate', async ({page})=>{
 });
 
 
-test('Print first & Second item displaying in the products page', async ({page})=>{
+test('@smoke Print first & Second item displaying in the products page', async ({page})=>{
     await page.goto('https://www.saucedemo.com/?utm_source=chatgpt.com')
     await page.locator('#user-name').fill('standard_user')
     await page.locator('#password').fill('secret_sauce')
