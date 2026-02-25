@@ -1,0 +1,11 @@
+{
+  "type": "object",
+  "required": ["id", "name", "age", "isActive"],
+  "properties": {
+    "id": { "type": "string" },
+    "name": { "type": "string" },
+    "age": { "type": "number" },
+    "isActive": { "type": "boolean" }
+  },
+  "additionalProperties": false
+}

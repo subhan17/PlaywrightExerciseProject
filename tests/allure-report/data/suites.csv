@@ -1,0 +1,6 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Thu Dec 04 17:53:38 IST 2025","Thu Dec 04 17:53:39 IST 2025","847","","launchbrowser.spec.js","[object Object]","","","Get titles of all tiles",""
+"passed","Thu Dec 04 17:53:36 IST 2025","Thu Dec 04 17:53:37 IST 2025","1020","","launchbrowser.spec.js","[object Object]","","","Invalid Login Validate",""
+"passed","Thu Dec 04 17:53:36 IST 2025","Thu Dec 04 17:53:36 IST 2025","531","","launchbrowser.spec.js","[object Object]","","","@smoke Launch Browser1",""
+"passed","Thu Dec 04 17:53:34 IST 2025","Thu Dec 04 17:53:36 IST 2025","1252","","launchbrowser.spec.js","[object Object]","","","Launch Browser",""
+"passed","Thu Dec 04 17:53:37 IST 2025","Thu Dec 04 17:53:38 IST 2025","975","","launchbrowser.spec.js","[object Object]","","","@smoke Print first & Second item displaying in the products page",""

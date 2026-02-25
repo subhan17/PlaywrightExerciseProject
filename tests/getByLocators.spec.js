@@ -12,3 +12,13 @@ test("Check getByLocators method", async ({page})=>{
     await page.pause();
 
 })
+
+test("Select first Link", async ({page})=>{
+
+    await page.goto("https://www.google.com");
+    await page.locator('[name="q"]').fill('Playwright');
+    //await page.getByRole('textbox', { name: 'Search' }).press('Enter');
+    await page.getByRole('button', { name: 'Google Search' }).click();
+    await page.getByRole('link', {name: 'Playwright Automation'}).first().click();
+
+})

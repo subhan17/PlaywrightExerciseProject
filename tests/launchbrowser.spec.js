@@ -1,5 +1,7 @@
 const {test, expect} = require('@playwright/test')
 
+
+
 test('Launch Browser', async function({browser}){
     const context = await browser.newContext(); //we can add any cookies or permissions in this.
     const page = await context.newPage(); // opens a new tab
@@ -8,10 +10,11 @@ test('Launch Browser', async function({browser}){
     expect(await page.title()).toBe("Codeply simple HTML/CSS/JS preview")
 });
 
-test('@smoke Launch Browser1', async ({browser, page})=>{
-    await page.goto('https://playwright.dev/docs/intro')
+test('@smoke Validate Playright dev page ittle', async ({browser, page})=>{
+    await test.step('Navigate to Playwright site', async() =>{await page.goto('https://playwright.dev/docs/intro')})    
     console.log(await page.title())
-    expect(await page.title()).toBe("Playwright");    
+    await test.step('Validate Title', async() =>{
+    expect(await page.title()).toBe("Playwright");});    
 });
 
 test('Invalid Login Validate', async ({page})=>{
