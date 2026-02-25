@@ -15,17 +15,18 @@ test('dropdown test', async ({ page }) => {
 
 })
 
-test('Radio button', async ({ page }) => {
+test('@regression Radio button', async ({ page }) => {
     await page.goto('https://rahulshettyacademy.com/AutomationPractice/')
     const radio = page.locator('input[value="radio1"]')
     await radio.click()
     console.log(await radio.isChecked())
     await expect(radio).toBeChecked()
-    await page.pause()
+    await page.waitForTimeout(200)
     await radio.click()
-    await page.pause()
+    await page.waitForTimeout(200)
     console.log(await radio.isChecked())
-    await expect(radio).not.toBeChecked()
+    await expect(radio).toBeChecked() // radio buttons cannot be unchecked by clicking on them again, so this will still be true
+    //await expect(radio).not.toBeChecked()
 })
 
 test('Check Box', async ({ page }) => {

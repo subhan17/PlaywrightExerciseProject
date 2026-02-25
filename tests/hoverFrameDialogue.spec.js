@@ -10,7 +10,7 @@ test("Handle JSS Dialogue", async({page})=>{
     })    
 })
 
-test('Perform Hover',async({page})=>{
+test('@Smoke Perform Hover',async({page})=>{
     await page.goto("https://rahulshettyacademy.com/AutomationPractice/");
     await page.locator('#mousehover').hover();
     await page.locator('text=Top').click();

@@ -25,6 +25,11 @@ export default defineConfig({
     headless: true,
     screenshot: 'on',
     trace: 'retain-on-failure',
+    viewport: null,
+    launchOptions: {
+      // Add the --start-maximized argument for Chromium
+      args: ["--start-maximized"],
+    }
   }
 });
 
