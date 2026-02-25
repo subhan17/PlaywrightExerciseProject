@@ -15,7 +15,7 @@ test('dropdown test', async ({ page }) => {
 
 })
 
-test('Radio button', async ({ page }) => {
+test('@regression Radio button', async ({ page }) => {
     await page.goto('https://rahulshettyacademy.com/AutomationPractice/')
     const radio = page.locator('input[value="radio1"]')
     await radio.click()
