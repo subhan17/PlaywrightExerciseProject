@@ -5,7 +5,7 @@ function parsePrice(text) {
   return parseFloat(text.replace('$', '').trim());
 }
 
-test.only('@smoke Sauce Demo: add 2nd & 3rd items after sorting low->high and checkout', async ({ page }) => {
+test('@smoke Sauce Demo: add 2nd & 3rd items after sorting low->high and checkout', async ({ page }) => {
   // 1) Go to site and login
   await page.goto('https://www.saucedemo.com/');
   await page.fill('input[data-test="username"]', 'standard_user');
