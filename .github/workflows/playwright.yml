@@ -5,7 +5,7 @@ on:
     branches: [ main, master ]
   pull_request:
     branches: [ main, master ]
-    
+
 permissions:
   contents: write 
 
@@ -42,7 +42,7 @@ jobs:
         # - blob reporter feeds the merge step if you also want to use it later
         # - allure-playwright outputs "allure-results" per shard
         run: |
-          npx playwright test --grep "@smoke"\
+          npx playwright test --grep "@smoke" \
             --shard=${{ matrix.shardIndex }}/${{ matrix.shardTotal }} \
             --reporter=line,blob,allure-playwright
 
@@ -115,7 +115,7 @@ jobs:
       
       - name: Deploy Allure Report to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
-        if: success()
+        if: github.ref == 'refs/heads/main'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./allure-report
