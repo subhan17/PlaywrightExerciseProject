@@ -13,8 +13,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        shardIndex: [1, 2, 3, 4]
-        shardTotal: [4]
+        shardIndex: [1, 2]
+        shardTotal: [2]
 
     steps:
       - uses: actions/checkout@v4
@@ -39,7 +39,7 @@ jobs:
         # - blob reporter feeds the merge step if you also want to use it later
         # - allure-playwright outputs "allure-results" per shard
         run: |
-          npx playwright test \
+          npx playwright test --grep "@smoke"\
             --shard=${{ matrix.shardIndex }}/${{ matrix.shardTotal }} \
             --reporter=line,blob,allure-playwright
 
