@@ -1,0 +1,2 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","3494","@smoke Sauce Demo: add 2nd & 3rd items after sorting low->high and checkout","","Wed Feb 25 12:44:12 UTC 2026","passed","Wed Feb 25 12:44:16 UTC 2026","","sauceDemo.spec.js","",""
